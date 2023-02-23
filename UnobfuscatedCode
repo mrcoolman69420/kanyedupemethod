@@ -1,0 +1,112 @@
+local Player = game.Players.LocalPlayer
+local message = Player.PlayerGui.Message
+local playergui = Player.PlayerGui
+local frame = message.Frame
+local kanye = Instance.new("ImageLabel")
+local noob = Instance.new("ImageLabel")
+local noobtext = Instance.new("TextLabel")
+
+
+kanye.Name = "Kanye"
+kanye.Parent = frame
+kanye.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+kanye.BackgroundTransparency = 1.000
+kanye.Position = UDim2.new(0.0533591795, 0, 0.21636283, 0)
+kanye.Size = UDim2.new(0.4, 0, 0.4, 0)
+kanye.Image = "http://www.roblox.com/asset/?id=12569436176"
+kanye.ZIndex = 999
+kanye.ImageColor3 = Color3.fromRGB(75, 187, 221)
+
+noob.Name = "Noob"
+noob.Parent = frame
+noob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+noob.BackgroundTransparency = 1.000
+noob.Position = UDim2.new(0.595591843, 0, 0.214805605, 0)
+noob.Size = UDim2.new(0.3, 0, 0.4, 0)
+noob.Image = "http://www.roblox.com/asset/?id=11232163971"
+noob.ZIndex = 999
+noob.ImageColor3 = Color3.fromRGB(75, 187, 221)
+
+
+
+frame.Cancel.Visible = false
+frame["Option 1"].Visible = false
+frame["Option 2"].Visible = false
+frame.OptionC.Visible = false
+frame.OptionA.Visible = false
+frame.OptionB.Visible = false
+frame.Ok.Visible = false
+frame.BackgroundColor3 = Color3.fromRGB(47, 62, 73)
+frame.Yes.Visible = false
+frame.No.Visible = false
+frame.Desc.Visible = false
+frame.Title.Text = "Dupe"
+frame["Option 1"].Visible = true
+frame["Option 2"].Visible = true
+frame["Option 1"].TextLabel.Text = "Kanye dupe method"
+frame["Option 2"].TextLabel.Text = "Easy dupe method"
+
+message.Enabled = true
+
+local option1 = frame["Option 1"]
+local option2 = frame["Option 2"]
+
+option1.MouseButton1Click:Connect(function()
+    kanye.Visible = false
+    noob.Visible = false
+    frame.Desc.Visible = true
+    message.Enabled = false
+    frame.Desc.Text = "here u go."
+    frame.Title.Text = "wtf"
+    frame.Yes.Visible = false
+    frame.No.Visible = false
+    option2.Visible = false
+    option1.Visible = false
+    frame.Ok.Visible = true
+    frame.Ok.TextLabel.Text = "yay"
+    message.Enabled = true
+end)
+
+option2.MouseButton1Click:Connect(function()
+    kanye.Visible = false
+    noob.Visible = false
+    frame.Desc.Visible = true
+    message.Enabled = false
+    frame.Desc.Text = "you pussy, you dont get shit"
+    frame.Title.Text = "huh?!"
+    frame.Yes.Visible = false
+    frame.No.Visible = false
+    option2.Visible = false
+    option1.Visible = false
+    frame.Ok.Visible = true
+    frame.Ok.TextLabel.Text = "fuck u"
+    message.Enabled = true
+end)
+
+frame.Ok.MouseButton1Click:Connect(function()
+    message.Enabled = false
+    frame.Desc.Text = "u got trolled so hard 😂😂😂"
+    frame.Title.Text = "😈😈😈"
+    frame.Ok.TextLabel.Text = "WTF?"
+    wait(0.5)
+    frame.Ok.Visible = false
+    frame.OptionC.Visible = true
+    frame.OptionB.Visible = true
+    frame.OptionA.Visible = true
+    frame.OptionC.TextLabel.Text = "KYS!"
+    frame.OptionB.TextLabel.Text = "WHY"
+    frame.OptionA.TextLabel.Text = "😭😭"
+    message.Enabled = true
+end)
+
+frame.OptionA.MouseButton1Click:Connect(function()
+    message.Enabled = false
+end)
+
+frame.OptionB.MouseButton1Click:Connect(function()
+    message.Enabled = false
+end)
+
+frame.OptionC.MouseButton1Click:Connect(function()
+    message.Enabled = false
+end)
