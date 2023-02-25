@@ -101,18 +101,18 @@ end)
 
 frame.OptionA.MouseButton1Click:Connect(function()
     message.Enabled = false
-    frame.Title.Text = Hey!
+    frame.Title.Text = "Hey!"
     frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
 end)
 
 frame.OptionB.MouseButton1Click:Connect(function()
     message.Enabled = false
-        frame.Title.Text = Hey!
+        frame.Title.Text = "Hey!"
     frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
 end)
 
 frame.OptionC.MouseButton1Click:Connect(function()
     message.Enabled = false
-        frame.Title.Text = Hey!
+        frame.Title.Text = "Hey!"
     frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
 end)
